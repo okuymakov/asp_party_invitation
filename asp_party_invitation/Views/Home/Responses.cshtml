@@ -1,0 +1,9 @@
+﻿@model List<RSVPResponse>
+
+@foreach (var res in Model)
+{
+    <div class="name">Name: @res.Name</div>
+    <div class="willAttend">Will attend: @(res.WillAttend? "yes" : "no") </div>
+    <div class ="message">Message: @res.Message</div>
+    <hr />
+}
